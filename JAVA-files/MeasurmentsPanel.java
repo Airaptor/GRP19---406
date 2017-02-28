@@ -6,11 +6,13 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class MeasurmentsPanel extends JPanel{
+
 	public MeasurmentsPanel(){
 	setLayout(new BorderLayout());
+	final String DEGREE = "\u00b0";
 	setBackground(Color.BLACK);
 	JLabel label1=new JLabel("Heart rate:100bpm. Safe:60-100bpm");
-	JLabel label2=new JLabel("Temperature:37°C Safe: 38.2°C ");
+	JLabel label2=new JLabel("Temperature:37" + DEGREE + "C Safe: 38.2" + DEGREE + "C ");
 	JLabel label3=new JLabel("Blood oxygen level:80% Safe:90%");
 	JLabel label4=new JLabel("Blood Pressure: 130/80mmHg Safe:120/80-140/90");
 	
