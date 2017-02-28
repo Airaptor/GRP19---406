@@ -5,9 +5,9 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class MeasurmentsPanel extends JPanel{
+public class MeasurementsPanel extends JPanel{
 
-	public MeasurmentsPanel(){
+	public MeasurementsPanel(){
 	setLayout(new BorderLayout());
 	final String DEGREE = "\u00b0";
 	setBackground(Color.BLACK);

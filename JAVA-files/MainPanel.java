@@ -20,19 +20,20 @@ public class MainPanel extends JPanel {
 		label1.setForeground(Color.RED);
 		measureButton.setBounds(200,400,200,100);
 		add(measureButton);
-	    add(label1);
+	   	add(label1);
 		//ActionMeasure measure = new ActionMeasure();
 		measureButton.addActionListener(new ActionListener()
-				{
-				public void actionPerformed(ActionEvent e){
-			System.out.println("high Blood Suger");
-			JPanel measurements = new MeasurmentsPanel();
-	        removeAll();	
-			add(measurements);
-			repaint();
-			revalidate();
+		{
+			public void actionPerformed(ActionEvent e){
+				System.out.println("high Blood Suger");
+				JPanel measurements = new MeasurementsPanel();
+	        		removeAll();	
+				add(measurements);
+				repaint();
+				revalidate();
+			}
 		}
-	});
+		);
 	}
 
 }
